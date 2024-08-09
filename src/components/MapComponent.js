@@ -16,7 +16,7 @@ const MapComponent = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://localhost:5000/api/vehicle-location');
+      const response = await fetch('https://backend-tj9l.onrender.com/api/vehicle-location');
       const data = await response.json();
       setPositions(data);
       setCurrentPosition(data[0]);
